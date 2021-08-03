@@ -80,6 +80,6 @@ git add testdir/ 递归testdir目录下所有文件，将其加入到git的跟�
 8、git tag -d <tagname>   案例：git tag -d v1.0 删除标签
 9、git push <remoteName> :refs/tags/<tagName>。案例：git push origin :refs/tags/v1.0  将本地的tags更新到远程，删除之后可以使用这个命令。
 10、git push <remoteName> --delete <tagname>  直接删除远程标签。案例：git push origin --delete v1.0
-11、git checkout v1.0 检出标签，禁止使用，请使用过12的命令
-12、git checkout -b branch v1.0 从标签1.0处创建分支
+11、git checkout v1.0 检出标签，禁止使用，请使用过12的命令     
+12、git checkout -b branch v1.0 从标签1.0处创建分支。
 
