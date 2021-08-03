@@ -36,4 +36,8 @@
 >**git rm PROJECTS.md**
 
 1、git rm PROJECTS.md zh 。直接删除文件，从目录中删除该文件。
-2、git rm --cached README。想让文件保留在磁盘，但是并不想让 Git 继续跟踪。
+2、git rm --cached README。想让文件保留在磁盘，但是并不想让 Git 继续跟踪。此命令将文件改为Untracked状态。
+>**git mv file_from file_to**
+
+1、移动文件
+2、git mv ccc.txt ddd.txt。文件重命名，将ccc.txt重命名为ddd.txt。
