@@ -12,6 +12,7 @@
 1、【**暂存已修改的文件Modified>>Staged**】将工作区的文件修改提交到暂存区。
 2、【**跟踪新文件Untracked >>Staged**】将未关联的文件和git关联起来。
 3、合并时把有冲突的文件标记为已解决状态。
+git add testdir/ 递归testdir目录下所有文件，将其加入到git的跟踪目录里面来 。
 
 >**git status**
 
