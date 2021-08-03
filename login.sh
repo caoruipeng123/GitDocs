@@ -1,7 +1,7 @@
 #!/usr/bin/expect
 #设置ssh连接的用户名
 set user $1
-ss
+sstt
 #设置ssh连接的host地址
 set host $2
 
