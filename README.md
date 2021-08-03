@@ -1,4 +1,4 @@
->**获取仓库：git clone和git init**
+>**获取仓库：git clone和git init111**
 
 **git clone**将远程仓库克隆到本地。
 用法一：git clone https://github.com/caoruipeng123/aaa.git  默认会创建一个aaa的目录作为项目文件夹。如果想重命名项目文件夹名称，可以使用用法二。
