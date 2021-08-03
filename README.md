@@ -56,3 +56,14 @@ git add testdir/ 递归testdir目录下所有文件，将其加入到git的跟�
 1、git commit --amend
 2、git reset HEAD CONTRIBUTING.md
 3、git checkout -- CONTRIBUTING.md 撤销对文件的修改。
+
+>**远程仓库**
+
+1、git remote  返回远程仓库的名称
+2、git remote -v 返回远程仓库的URL
+3、git remote remove origin  移除某个远程仓库
+4、git remote add origin https://github.com/caoruipeng123/aaa.git 添加一个远程仓库
+5、git push origin master 推送远程仓库，将本地分支master推送到远程仓库origin对应的URL。
+6、git remote show origin 查看某个远程仓库的详细信息。
+7、git remote rename origin pb  修改远程仓库的名称，将仓库名称从origin修改为pb
+
