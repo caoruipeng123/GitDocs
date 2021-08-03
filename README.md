@@ -24,7 +24,7 @@
 
 
 >**git commint**
- 
+
  1、git commit -m '提交备注' 。将暂存区的跟踪文件提交到仓库。
  2、 git commit -a -m '提交备注'。将暂存区和工作区所有的跟踪文件提交到仓库。
 
@@ -33,3 +33,7 @@
 
 查看未暂存的文件做了那些修改：git diff。此命令比较的是工作目录中当前文件和暂存区域快照之间的差异。
 查看已暂存的文件做了哪些修改：git diff --staged。这条命令将比对已暂存文件与最后一次提交的文件差异。
+>**git rm PROJECTS.md**
+
+1、git rm PROJECTS.md zh 。直接删除文件，从目录中删除该文件。
+2、git rm --cached README。想让文件保留在磁盘，但是并不想让 Git 继续跟踪。
