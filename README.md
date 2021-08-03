@@ -77,9 +77,13 @@ git add testdir/ 递归testdir目录下所有文件，将其加入到git的跟�
 5、git show v1.4 查看标签v1.4对应的提交信息
 6、git tag -a v1.2 9fceb02  在指定提交位置打标签 （先用git log --pretty=oneline找到提交的hash值）
 7、git push origin v1.0 推送标签到远程。默认情况下，push并不会推送标签到远程。
-8、git tag -d <tagname>   案例：git tag -d v1.0 删除标签
-9、git push <remoteName> :refs/tags/<tagName>。案例：git push origin :refs/tags/v1.0  将本地的tags更新到远程，删除之后可以使用这个命令。
-10、git push <remoteName> --delete <tagname>  直接删除远程标签。案例：git push origin --delete v1.0
+8、git tag -d <tagname>   案例：git tag -d v1.0 删除标签。  
+
+9、git push <remoteName> :refs/tags/<tagName>。案例：git push origin :refs/tags/v1.0  将本地的tags更新到远程，删除之后可以使用这个命令。  
+
+10、git push <remoteName> --delete <tagname>  直接删除远程标签。案例：git push origin --delete v1.0  
+
 11、git checkout v1.0 检出标签，禁止使用，请使用过12的命令     
+
 12、git checkout -b branch v1.0 从标签1.0处创建分支。
 
