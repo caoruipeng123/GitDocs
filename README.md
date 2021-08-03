@@ -39,5 +39,5 @@
 2、git rm --cached README。想让文件保留在磁盘，但是并不想让 Git 继续跟踪。此命令将文件改为Untracked状态。
 >**git mv file_from file_to**
 
-1、移动文件
+1、git mv ddd.txt test/ttt.txt。移动文件，将文件移动到指定位置。
 2、git mv ccc.txt ddd.txt。文件重命名，将ccc.txt重命名为ddd.txt。
