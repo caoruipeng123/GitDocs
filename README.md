@@ -54,3 +54,5 @@ git add testdir/ 递归testdir目录下所有文件，将其加入到git的跟�
 >**撤销记录**
 
 1、git commit --amend
+2、git reset HEAD CONTRIBUTING.md
+3、git checkout -- CONTRIBUTING.md 撤销对文件的修改。
