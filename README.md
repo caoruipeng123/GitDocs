@@ -1,21 +1,19 @@
-#### 获取仓库git clone和git init ####
+#### 获取仓库git clone和git init 
 
 1、**git clone `url`**  克隆远程仓库到本地。    
 2、**git clone `url` `dirName`**   克隆远程仓库到本地，默认会创建一个名为`dirName`的目录。        
 3、**git init** 在当前目录下创建一个空仓库 。           
 4、**git init `dirName`**   在当前目录下新建一个目录`dirName`，在`dirName`目录下创建一个空仓库。         
 
-### git add  精确地将内容添加到下一次提交中  ###
-1、【**暂存已修改的文件Modified>>Staged**】将工作区的文件修改提交到暂存区。   
-2、【**跟踪新文件Untracked >>Staged**】将未关联的文件和git关联起来。   
-3、合并时把有冲突的文件标记为已解决状态。   
-git add `file1`  `file2`  `file3` 添加一个或多个文件到暂存区 
-git add  `dirName`   添加`dirName`目录中所有文件到暂存区 。    
-git add .   添加当前目录的所有文件到暂存区。  
-git add -p 添加每个变化前，都会要求确认。对于同一个文件的多处变化，可以实现分次提交   
-git rm `file1`  `file2`  `file3`  删除工作区文件，并且将这次删除放入暂存区       
-git rm --cached `file1`  `file2`  `file3`  停止追踪指定文件，但该文件会保留在工作区  
-git mv `sourceName` `destinationName` 改名文件，并且将这个改名放入暂存区
+#### 增加/删除文件
+1、git add `file1`  `file2`  `file3` 添加一个或多个文件到暂存区   
+2、git add  `dirName`   添加`dirName`目录中所有文件到暂存区    
+3、git add .   添加当前目录的所有文件到暂存区  
+4、git add -p 添加每个变化前，都会要求确认。对于同一个文件的多处变化，可以实现分次提交      
+5、git rm `file1`  `file2`  `file3`  删除工作区文件，并且将这次删除放入暂存区       
+6、git rm --cached `file1`  `file2`  `file3`  停止追踪指定文件，但该文件会保留在工作区  
+7、git mv `sourceName` `destinationName` 改名文件，并且将这个改名放入暂存区    
+
 >**git status**
 
 1、git status 直接查看当前仓库的文件状态.命令的输出十分详细，但其用语有些繁琐。    
