@@ -1,9 +1,8 @@
 #### 获取仓库git clone和git init 
-
-1、**git clone `url`**  克隆远程仓库到本地。    
-2、**git clone `url` `dirName`**   克隆远程仓库到本地，默认会创建一个名为`dirName`的目录。        
-3、**git init** 在当前目录下创建一个空仓库 。           
-4、**git init `dirName`**   在当前目录下新建一个目录`dirName`，在`dirName`目录下创建一个空仓库。         
+1、git clone `url`  克隆远程仓库到本地。    
+2、git clone `url` `dirName`   克隆远程仓库到本地，默认会创建一个名为`dirName`的目录。   
+3、git init 在当前目录下创建一个空仓库 。           
+4、git init `dirName`   在当前目录下新建一个目录`dirName`，在`dirName`目录下创建一个空仓库。         
 
 #### 增加/删除文件
 1、git add `file1`  `file2`  `file3` 添加一个或多个文件到暂存区   
