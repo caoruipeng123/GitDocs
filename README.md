@@ -9,8 +9,9 @@
 1、【**暂存已修改的文件Modified>>Staged**】将工作区的文件修改提交到暂存区。   
 2、【**跟踪新文件Untracked >>Staged**】将未关联的文件和git关联起来。   
 3、合并时把有冲突的文件标记为已解决状态。   
-git add testdir/ 递归testdir目录下所有文件，将其加入到git的跟踪目录里面来 。    
-
+git add `file1`  `file2`  `file3` 添加一个或多个文件到暂存区 
+git add  `dirName`   添加`dirName`目录中所有文件到暂存区 。    
+git add . 添加当前目录的所有文件到暂存区。
 >**git status**
 
 1、git status 直接查看当前仓库的文件状态.命令的输出十分详细，但其用语有些繁琐。    
