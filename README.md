@@ -1,14 +1,10 @@
->**获取仓库：git clone和git init111**
+### 获取仓库git clone和git init ###
+1、**git clone <url>**  克隆远程仓库到本地。    
+2、**git clone <url> <dirName>**   克隆远程仓库到本地，默认会创建一个名为<dirName>的目录。        
+3、**git init** 在当前目录下创建一个空仓库 。           
+4、**git init <dirName>**   在当前目录下新建一个目录<dirName>，在<dirName>目录下创建一个空仓库。         
 
-**git clone**将远程仓库克隆到本地。   
-用法一：git clone https://github.com/caoruipeng123/aaa.git  默认会创建一个aaa的目录作为项目文件夹。如果想重命名项目文件夹名称，可以使用用法二。   
-用法二：git clone https://github.com/caoruipeng123/aaa.git demogit 会创建一个名为demogit的目录作为项目文件夹。             
-
-**git init**用于在本地初始化一个默认的空仓库    
-用法：git init        
-
->**git add   精确地将内容添加到下一次提交中 **
-
+### git add  精确地将内容添加到下一次提交中  ###
 1、【**暂存已修改的文件Modified>>Staged**】将工作区的文件修改提交到暂存区。   
 2、【**跟踪新文件Untracked >>Staged**】将未关联的文件和git关联起来。   
 3、合并时把有冲突的文件标记为已解决状态。   
@@ -24,7 +20,7 @@ git add testdir/ 递归testdir目录下所有文件，将其加入到git的跟�
 ​       MM:提交到暂存区，又做了修改的文件有两个M标记。   
 
 
->**git commint**
+>**git commit**
 
 1、git commit -m '提交备注' 。将暂存区的跟踪文件提交到仓库。   
 2、git commit -a -m '提交备注'。将暂存区和工作区所有的跟踪文件提交到仓库。   
