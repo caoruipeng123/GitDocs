@@ -1,8 +1,9 @@
-### 获取仓库git clone和git init ###
-1、**git clone <url>**  克隆远程仓库到本地。    
-2、**git clone <url> <dirName>**   克隆远程仓库到本地，默认会创建一个名为<dirName>的目录。        
+#### 获取仓库git clone和git init ####
+
+1、**git clone `url`**  克隆远程仓库到本地。    
+2、**git clone `url` `dirName`**   克隆远程仓库到本地，默认会创建一个名为`dirName`的目录。        
 3、**git init** 在当前目录下创建一个空仓库 。           
-4、**git init <dirName>**   在当前目录下新建一个目录<dirName>，在<dirName>目录下创建一个空仓库。         
+4、**git init `dirName`**   在当前目录下新建一个目录`dirName`，在`dirName`目录下创建一个空仓库。         
 
 ### git add  精确地将内容添加到下一次提交中  ###
 1、【**暂存已修改的文件Modified>>Staged**】将工作区的文件修改提交到暂存区。   
