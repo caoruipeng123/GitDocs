@@ -23,10 +23,10 @@
 ​       MM:提交到暂存区，又做了修改的文件有两个M标记。   
 
 
->**git commit**
-
-1、git commit -m '提交备注' 。将暂存区的跟踪文件提交到仓库。   
-2、git commit -a -m '提交备注'。将暂存区和工作区所有的跟踪文件提交到仓库。   
+#### 代码提交 
+1、git commit -m `remark` 。从暂存区提交到仓库区，备注信息为`remark`   
+2、git commit `file1` `file2`   -m   `remark`。提交指定文件从暂存区到仓库区   
+3、git commit -am `remark`
 3、git commit --amend   
 
 >**git diff**
