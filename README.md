@@ -18,16 +18,17 @@
 1、git status 直接查看当前仓库的文件状态.命令的输出十分详细，但其用语有些繁琐。    
 2、git status -s  [git status --short]  查看状态的简单描述，比git status更加简介   
        ??：新添加的未跟踪文件。   11
-​       M：修改过的文件前面有 M 标记。 22  
-​       A：新添加到暂存区中的文件前面有 M 标记。111   
-​       MM:提交到暂存区，又做了修改的文件有两个M标记。   
+​       M：修改过的文件前面有 M 标记  
+​       A：新添加到暂存区中的文件前面有 M 标记   
+​       MM:提交到暂存区，又做了修改的文件有两个M标记   
 
 
 #### 代码提交 
 1、git commit -m `remark` 。从暂存区提交到仓库区，备注信息为`remark`   
 2、git commit `file1` `file2`   -m   `remark`。提交指定文件从暂存区到仓库区   
-3、git commit -am `remark`
-3、git commit --amend   
+3、git commit -am `remark`。提交工作区自上次commit之后的变化，直接到仓库区，相当于将git add和git commit -m 两个命令一起执行  
+4、git commit --amend -m `remark`。如果代码没有任何新变化，则用来改写上一次commit的提交信息  
+5、
 
 >**git diff**
 
