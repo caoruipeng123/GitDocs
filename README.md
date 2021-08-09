@@ -28,12 +28,12 @@
 2、git commit `file1` `file2`   -m   `remark`。提交指定文件从暂存区到仓库区   
 3、git commit -am `remark`。提交工作区自上次commit之后的变化，直接到仓库区，相当于将git add和git commit -m 两个命令一起执行  
 4、git commit --amend -m `remark`。如果代码没有任何新变化，则用来改写上一次commit的提交信息  
-5、
+5、git commit --amend `file1` `file2`
 
 >**git diff**
 
 查看未暂存的文件做了那些修改：git diff。**工作区和暂存区比较 。**此命令比较的是工作目录中当前文件和暂存区域快照之间的差异。
-查看已暂存的文件做了哪些修改：git diff --staged。**暂存区和仓库比较 。**这条命令将比对已暂存文件与最后一次提交的文件差异。
+查看已暂存的文件做了哪些修改：git diff --staged。**暂存区和仓库比较 。**这条命令将比对已暂存文件与最后一次提交的文件差异。修改记录111
 
 >**git rm PROJECTS.md**
 
