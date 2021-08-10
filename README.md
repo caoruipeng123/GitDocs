@@ -48,8 +48,11 @@ git的配置文件有三种：
 `A`：新添加到暂存区中的文件前面有 `A` 标记(通过git add命令新关联文件到暂存区的时候有`M`标记)   
 `MM`:提交到暂存区，又做了修改的文件有`MM`标记   
 10、git log `-2` 只显示最近的两条提交记录  
-11、git log -p -2
->**git rm PROJECTS.md**
+11、git log `-p` `-2` 以补丁的形式查看最近的两条提交记录，展示出这两次提交所有的修改内容  
+12、git log --pretty=format:`"%h - %an, %ar : %s"` 按照指定的格式输出日志   
+13、git log --pretty=`oneline` 将日志输出到一行，方便查看。另外还有`short`，`full` 和 `fuller` 选项
+
+**git rm PROJECTS.md**
 
 1、git rm PROJECTS.md zh 。直接删除文件，从目录中删除该文件。
 2、git rm --cached README。想让文件保留在磁盘，但是并不想让 Git 继续跟踪。此命令将文件改为Untracked状态。
