@@ -48,7 +48,7 @@ git的配置文件有三种：
 `A`：新添加到暂存区中的文件前面有 `A` 标记(通过git add命令新关联文件到暂存区的时候有`M`标记)   
 `MM`:提交到暂存区，又做了修改的文件有`MM`标记   
 10、git log `-2` 只显示最近的两条提交记录  
-11、git log -p
+11、git log -p -2
 >**git rm PROJECTS.md**
 
 1、git rm PROJECTS.md zh 。直接删除文件，从目录中删除该文件。
