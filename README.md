@@ -46,7 +46,9 @@ git的配置文件有三种：
 #### 查看信息
 1、git status 查看所有变更过的文件  
 2、git log 查看当前分支的历史提交记录  
-3、git log --stat 显示当前分支的历史提交记录，以及每次commit的详细信息
+3、git log --stat 显示当前分支的历史提交记录，以及每次commit的详细信息  
+4、git diff  `file1` 显示暂存区和工作区的差异  
+5、git diff --cached `file2`  显示暂存区和上一次commit(仓库区)的差异  
 >**git diff**
 
 查看未暂存的文件做了那些修改：git diff。**工作区和暂存区比较 。**此命令比较的是工作目录中当前文件和暂存区域快照之间的差异。
