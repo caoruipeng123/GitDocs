@@ -5,7 +5,7 @@
 4、git init `dirName`   在当前目录下新建一个目录`dirName`，在`dirName`目录下创建一个空仓库。   
 
 #### 配置
-git的配置文件有三种：
+git的配置文件有三种：  
 一、`/etc/gitconfig`文件。位于git安装目录下，针对系统里面所有用户。包含每个用户以及每个用户仓库的通用配置。如果执行 `git config` 命令带上`--system`选项的话就会修改这个文件里面的变量，因为这个是系统文件，你需要超级管理员权限才可以修改。   
 二 、`~/.gitconfig`文件。 位于用户主目录下面的配置文件。针对当前计算机用户。如果执行`git config`命令带上`--global`选项的话就会修改这个文件里面的变量。    
 三、`.git/config`文件。位于当前仓库的`.git`目录下， 针对当前仓库。如果执行`git config`带上`--local`选项的话就会修改这个文件里面的变量。[默认情况下，修改的都是当前仓库的变量，因此我们也可以省略--local关键字]   
@@ -41,8 +41,12 @@ git的配置文件有三种：
 2、git commit `file1` `file2`   -m   `remark`。提交指定文件从暂存区到仓库区   
 3、git commit -am `remark`。提交工作区自上次commit之后的变化，直接到仓库区，相当于将git add和git commit -m 两个命令一起执行  
 4、git commit --amend -m `remark`。改写上一次commit的提交信息。如果代码有变化，将暂存区的代码提交到仓库区  
-5、git commit --amend `file1` `file2` 改写上一次commit的提交信息。如果代码有变化，将暂存区指定的文件修改提交到仓库区  
+5、git commit --amend `file1` `file2` 改写上一次commit的提交信息。如果代码有变化，将暂存区指定的文件修改提交到仓库区     
 
+#### 查看信息
+1、git status 查看所有变更过的文件  
+2、git log 查看当前分支的历史提交记录  
+3、git log --stat 显示当前分支的历史提交记录，以及每次commit的详细信息
 >**git diff**
 
 查看未暂存的文件做了那些修改：git diff。**工作区和暂存区比较 。**此命令比较的是工作目录中当前文件和暂存区域快照之间的差异。
