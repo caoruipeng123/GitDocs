@@ -2,7 +2,15 @@
 1、git clone `url`  克隆远程仓库到本地。    
 2、git clone `url` `dirName`   克隆远程仓库到本地，默认会创建一个名为`dirName`的目录。   
 3、git init 在当前目录下创建一个空仓库 。           
-4、git init `dirName`   在当前目录下新建一个目录`dirName`，在`dirName`目录下创建一个空仓库。         
+4、git init `dirName`   在当前目录下新建一个目录`dirName`，在`dirName`目录下创建一个空仓库。   
+
+#### 配置
+git的配置文件有三种：
+一、`/etc/gitconfig`文件。位于git安装目录下，针对系统里面所有用户。包含每个用户以及每个用户仓库的通用配置。如果执行 `git config` 命令带上`--system`选项的话就会修改这个文件里面的变量，因为这个是系统文件，你需要超级管理员权限才可以修改。   
+二 、`~/.gitconfig`文件。 位于用户主目录下面的配置文件。针对当前计算机用户。如果执行`git config`命令带上`--global`选项的话就会修改这个文件里面的变量。    
+三、`.git/config`文件。位于当前仓库的`.git`目录下， 针对当前仓库。如果执行`git config`带上`--local`选项的话就会修改这个文件里面的变量。   
+注意：变量优先级3>2>1。每一级的变量会覆盖上一级的变量。如`.git/config`会覆盖`~/.gitconfig`中的变量，`~/.gitconfig`会覆盖`/etc/gitconfig`的变量。  
+1、git config
 
 #### 增加/删除文件
 1、git add `file1`  `file2`  `file3` 添加一个或多个文件到暂存区   
@@ -27,8 +35,8 @@
 1、git commit -m `remark` 。从暂存区提交到仓库区，备注信息为`remark`   
 2、git commit `file1` `file2`   -m   `remark`。提交指定文件从暂存区到仓库区   
 3、git commit -am `remark`。提交工作区自上次commit之后的变化，直接到仓库区，相当于将git add和git commit -m 两个命令一起执行  
-4、git commit --amend -m `remark`。如果代码没有任何新变化，则用来改写上一次commit的提交信息。如果代码有变化，将暂存区的代码提交到仓库区  
-5、git commit --amend `file1` `file2` 重做上一次commit，并只提交指定文件的新变化到仓库区。  
+4、git commit --amend -m `remark`。改写上一次commit的提交信息。如果代码有变化，将暂存区的代码提交到仓库区  
+5、git commit --amend `file1` `file2` 改写上一次commit的提交信息。如果代码有变化，将暂存区指定的文件修改提交到仓库区  
 
 >**git diff**
 
