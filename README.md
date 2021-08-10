@@ -26,16 +26,6 @@ git的配置文件有三种：
 6、git rm --cached `file1`  `file2`  `file3`  停止追踪指定文件，但该文件会保留在工作区  
 7、git mv `sourceName` `destinationName` 改名文件，并且将这个改名放入暂存区    
 
->**git status**
-
-1、git status 直接查看当前仓库的文件状态.命令的输出十分详细，但其用语有些繁琐。    
-2、git status -s  [git status --short]  查看状态的简单描述，比git status更加简介   
-??：新添加的未跟踪文件。  
-M：修改过的文件前面有 M 标记  
-A：新添加到暂存区中的文件前面有 M 标记   
-MM:提交到暂存区，又做了修改的文件有两个M标记   
-
-
 #### 代码提交 
 1、git commit -m `remark` 。从暂存区提交到仓库区，备注信息为`remark`   
 2、git commit `file1` `file2`   -m   `remark`。提交指定文件从暂存区到仓库区   
@@ -47,16 +37,17 @@ MM:提交到暂存区，又做了修改的文件有两个M标记
 1、git status 查看所有变更过的文件  
 2、git log 查看当前分支的历史提交记录  
 3、git log --stat 显示当前分支的历史提交记录，以及每次commit的详细信息  
-4、git diff  `file1` 查看未暂存的修改。显示暂存区和工作区的差异  
-5、git diff --cached `file1`  显示暂存区和上一次commit(仓库区)的差异  
-6、git diff HEAD  显示工作区与当前分支最新commit之间的差异   
+4、git diff  `file1` 查看未暂存的修改。显示工作区和暂存区的差异  
+5、git diff --cached `file1`或者git diff --staged `file1`  查看已暂存的修改。显示暂存区和上一次commit(仓库区)的差异  
+6、--git diff HEAD  显示工作区与当前分支最新commit之间的差异   
 7、git show `commitId` 显示某次提交的具体的内容变化  
 8、git reflog 显示当前分支的最近几次提交    
+9、git status -s  [git status --short]  查看状态的简单描述，比git status更加简介   
+??：新添加的未跟踪文件。  
+M：修改过的文件前面有 M 标记  
+A：新添加到暂存区中的文件前面有 A 标记   
+MM:提交到暂存区，又做了修改的文件有两个M标记   
 
->**git diff**
-
-查看未暂存的文件做了那些修改：git diff。**工作区和暂存区比较 。**此命令比较的是工作目录中当前文件和暂存区域快照之间的差异。
-查看已暂存的文件做了哪些修改：git diff --staged。**暂存区和仓库比较 。**这条命令将比对已暂存文件与最后一次提交的文件差异。修改记录111
 
 >**git rm PROJECTS.md**
 
