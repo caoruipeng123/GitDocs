@@ -8,9 +8,14 @@
 git的配置文件有三种：
 一、`/etc/gitconfig`文件。位于git安装目录下，针对系统里面所有用户。包含每个用户以及每个用户仓库的通用配置。如果执行 `git config` 命令带上`--system`选项的话就会修改这个文件里面的变量，因为这个是系统文件，你需要超级管理员权限才可以修改。   
 二 、`~/.gitconfig`文件。 位于用户主目录下面的配置文件。针对当前计算机用户。如果执行`git config`命令带上`--global`选项的话就会修改这个文件里面的变量。    
-三、`.git/config`文件。位于当前仓库的`.git`目录下， 针对当前仓库。如果执行`git config`带上`--local`选项的话就会修改这个文件里面的变量。   
+三、`.git/config`文件。位于当前仓库的`.git`目录下， 针对当前仓库。如果执行`git config`带上`--local`选项的话就会修改这个文件里面的变量。[默认情况下，修改的都是当前仓库的变量，因此我们也可以省略--local关键字]   
 注意：变量优先级3>2>1。每一级的变量会覆盖上一级的变量。如`.git/config`会覆盖`~/.gitconfig`中的变量，`~/.gitconfig`会覆盖`/etc/gitconfig`的变量。  
-1、git config
+1、git config --list 查看所有git配置变量  
+2、git config --list --show-origin 查看所有git配置变量以及这些变量的文件路径。   
+3、git config --global user.name `name`  设置用户名  
+4、git config --global user.email `email` 设置密码        
+5、git config `name` 查看某个具体的变量值  
+
 
 #### 增加/删除文件
 1、git add `file1`  `file2`  `file3` 添加一个或多个文件到暂存区   
