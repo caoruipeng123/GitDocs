@@ -54,8 +54,8 @@ git的配置文件有三种：
 #### 撤销
 1、git commit --amend -m `remark`。改写上一次commit的提交信息。如果代码有变化，将暂存区的代码提交到仓库区   
 2、 git checkout -- `file1` `file2` 撤销对文件的修改  
-3、git reset HEAD `file1` 取消已经暂存的文件到工作区   
-
+3、git reset HEAD `file1` `file2` 取消已经暂存的文件到工作区   
+4、
 **git rm PROJECTS.md**
 
 1、git rm PROJECTS.md zh 。直接删除文件，从目录中删除该文件。
