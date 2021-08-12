@@ -55,7 +55,32 @@ git的配置文件有三种：
 1、git commit --amend -m `remark`。改写上一次commit的提交信息。如果代码有变化，将暂存区的代码提交到仓库区   
 2、 git checkout -- `file1` `file2` 撤销对文件的修改  
 3、git reset HEAD `file1` `file2` 取消已经暂存的文件到工作区   
-4、
+
+#### 远程仓库
+1、git remote 显示所有远程仓库URL的简写  
+2、git remote -v 显示所有远程仓库简写和URL仓库地址   
+3、git remote add `shortname` `url` 添加一个远程仓库         
+4、git push `shortName` `branchName` 推送本地仓库到远程仓库。示例： git push origin master  
+5、git fetch `shortName` 从远程仓库中抓取与拉取
+6、git remote rename `sourceName` `desName` 远程仓库重命名。示例：git remote rename origin pb，将远程仓库origin的别名改为pb  
+7、 git remote remove `shortName` 移除远程仓库  
+
+#### 标签Tag
+1、git tag 列出仓库中所有tag  
+2、git tag -l 'v1.0*' 列出所有满足指定条件的tag  
+3、git tag `tagName` 在当前commit上创建一个tag  
+4、git tag `tagName`  `commit` 在指定commit上创建一个tag。   
+5、git show `tagName` 查看tag信息   
+6、git push origin  `tagName` 推送tag到远程仓库 ,git push不会将tag推送到远程仓库，需要我们明确的推送到远程仓库   
+7、git push origin --tags 推送所有tag到远程仓库  
+8、git tag -d `tagName` 从本地删除一个tag，注意这个命令不会删除远程仓库的tag，需要使用git push `shortName`  :refs/tags/`tagName`来删除远程仓库的tag。注意`shortName`和后面的冒号直接有一个空格。  
+9、git push origin --delete `tagname` 直接从远程仓库删除指定的tag   
+10、git checkout -b `branchName` `tagName` 新建一个分支，指向某个 tag  
+11、git pull `shortName` `branchName` 从远程仓库拉取内容  
+
+####  远程同步 
+1、git fetch origin
+
 **git rm PROJECTS.md**
 
 1、git rm PROJECTS.md zh 。直接删除文件，从目录中删除该文件。
