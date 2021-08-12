@@ -53,7 +53,8 @@ git的配置文件有三种：
 13、git log --pretty=`oneline` 将日志输出到一行，方便查看。另外还有`short`，`full` 和 `fuller` 选项
 #### 撤销
 1、git commit --amend -m `remark`。改写上一次commit的提交信息。如果代码有变化，将暂存区的代码提交到仓库区   
-2、
+2、 git checkout -- `file1` `file2` 撤销对文件的修改  
+3、
 
 **git rm PROJECTS.md**
 
