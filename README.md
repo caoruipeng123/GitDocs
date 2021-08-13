@@ -99,7 +99,7 @@ git的配置文件有三种：
 10、 git branch --merged `branchName`  列出所有已经合并到指定分支的分支  
 11、git branch --no-merged `branchName` 列出所有未合并到当前分支的分支  
 12、git checkout - 切换到上一个分支，可以用于两个分支之间来回切换   
-13、
+13、bug1修改
 
 **git rm PROJECTS.md**
 
