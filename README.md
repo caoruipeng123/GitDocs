@@ -84,6 +84,23 @@ git的配置文件有三种：
 3、git push `shortName` `branchName`  推送本地变化到远程远程仓库   
 4、git push `shortName` --force 强行推送当前分支到远程仓库，即使有冲突
 5、git push origin --all  推送所有分支到远程仓库   
+6、git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done  从远程仓库拉取所有分支到本地  
+
+#### 分支
+1、git branch 列出所有本地分支   
+2、git branch -r 列出所有远程分支   
+3、git branch -a 列出所有分支（包括本地分支和远程分支）  
+4、git branch `branchName` 创建一个分支，并且留在当前分支  
+5、git checkout `branchName` 切换到指定分支  
+6、git checkout -b `branchName` 新建一个分支，并切换到新建的分支上  
+7、git branch -d `branchName` 删除指定的分值  
+8、git branch `branchName` `commitId` 创建一个分支，并指向指定的commit  
+9、git branch -v 查看每个分支最后的commitId    
+10、 git branch --merged `branchName`  列出所有已经合并到指定分支的分支  
+11、git branch --no-merged `branchName` 列出所有未合并到当前分支的分支  
+12、git checkout - 切换到上一个分支，可以用于两个分支之间来回切换   
+13、
+
 **git rm PROJECTS.md**
 
 1、git rm PROJECTS.md zh 。直接删除文件，从目录中删除该文件。
