@@ -108,17 +108,17 @@ git pull --all
 16、git push origin --all  推送所有分支到远程仓库   
 
 #### 仓库迁移步骤 
-1、拉取远程仓库到本地
-git clone https://github.com/caoruipeng123/GitDocs.git 
-2、拉取所有远程分支到本地
-git branch -r | grep -v '\\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done      
+1、拉取远程仓库到本地  
+git clone https://github.com/caoruipeng123/GitDocs.git   
+2、拉取所有远程分支到本地  
+git branch -r | grep -v '\\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done        
 git fetch --all  
 git pull --all  
-3、拉取所有tag到本地
-4、删除本地的remote
-git remote remove origin
-5、将本地git仓库和最新的远程仓库关联
-git remote add origin http://caoruipeng@121.41.9.22:10256/r/~caoruipeng/quartznet.git
-4、推送所有分支到远程 
-git push -u origin main
-git push origin --all
+3、拉取所有tag到本地  
+4、删除本地的remote  
+git remote remove origin  
+5、将本地git仓库和最新的远程仓库关联  
+git remote add origin http://caoruipeng@121.41.9.22:10256/r/~caoruipeng/quartznet.git  
+4、推送所有分支到远程   
+git push -u origin main  
+git push origin --all   
