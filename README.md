@@ -84,7 +84,7 @@ git的配置文件有三种：
 3、git push `shortName` `branchName`  推送本地变化到远程远程仓库   
 4、git push `shortName` --force 强行推送当前分支到远程仓库，即使有冲突
 5、git push origin --all  推送所有分支到远程仓库   
-6、git branch -r | grep -v '\\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done  从远程仓库拉取所有分支到本地  
+6、git branch -r | grep -v '\\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done   从远程仓库拉取所有分支到本地  
 
 #### 分支
 1、git branch 列出所有本地分支   
