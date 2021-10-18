@@ -79,7 +79,7 @@ git的配置文件有三种：
 11、git pull `shortName` `branchName` 从远程仓库拉取内容  
 
 ####  远程同步 
---1、git fetch `shortName`  下载远程仓库的所有变动  
+1、git fetch `shortName`  下载远程仓库的所有变动  
 2、git pull `shortName` `branchName`   取回远程仓库的变化 ，并和分支合并。  
 3、git push `shortName` `branchName`  推送本地变化到远程远程仓库   
 4、git push `shortName` --force 强行推送当前分支到远程仓库，即使有冲突
